@@ -3,6 +3,7 @@ import HomePage from './HomePage';
 import Layout from './Layout';
 import CartPage from './CartPage';
 import LoginPage from './LoginPage';
+import CreateAccount from './CreateAccount';
 
 const router = createBrowserRouter([
     {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
             { index: true, element: <HomePage />},
             { path: 'cart', element: <CartPage />},
             { path: 'login', element: <LoginPage />},
-            { path: '/:email', element: <HomePage />},
+            { path: 'createAccount', element: <CreateAccount />},
         ]
     }
     

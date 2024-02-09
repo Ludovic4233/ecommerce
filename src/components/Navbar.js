@@ -33,14 +33,14 @@ const Navbar = () => {
             <ul className='navbarMenu'>
                 <li><img src="" alt="logo"/></li>
                 {/* <li><h1>Titre</h1></li> */}
-                <li><Link to='/'>Accueil</Link></li>
-                <li><Link to='/cart'>Panier</Link></li>
+                <li><Link className="link-style" to='/'>Accueil</Link></li>
+                <li><Link className="link-style" to='/cart'>Panier</Link></li>
                 {
-                    !isLogIn ? (<li><Link to='/login'>Se connecter</Link></li>) :
+                    !isLogIn ? (<li><Link className="link-style" to='/login'>Se connecter</Link></li>) :
                     (
                         <>
                             <li>Salut { email } !</li>
-                            <li><button onClick={handleLogout}>Se déconnecter</button></li>
+                            <li><button className="btn-logOut" onClick={handleLogout}>Se déconnecter</button></li>
                         </>
                     )
                 }

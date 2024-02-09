@@ -9,3 +9,21 @@ nav {
     display: flex;
     justify-content: space-between;
   }
+
+  .btn-logOut{
+    border-style: none;
+    background-color: aqua;
+  }
+
+  .link-style {
+    text-decoration: none;
+    color:black
+  }
+
+  .link-style:hover {
+    font-size: 20px;
+  }
+
+  .btn-logOut:hover {
+    font-size: 20px;
+  }

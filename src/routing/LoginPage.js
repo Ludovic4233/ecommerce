@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
 import '../styles/LoginPage.css'
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
 
@@ -62,6 +63,8 @@ const LoginPage = () => {
                 </div>
                 <button>Entrer</button>
             </form>
+
+            <Link to="/createAccount">créer un compte</Link>
         </>
     )
 }
